@@ -13,7 +13,7 @@ function MenuCard({ cardimg, menuitems, category }) {
           {category}
         </h2>
       </div>
-      <div className="menu-items flex justify-center">
+      <div className="menu-items flex justify-center text-center">
         <ul className="mt-5">
           {menuitems.map((item, index) => {
             return (
