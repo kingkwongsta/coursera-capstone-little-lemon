@@ -1,5 +1,7 @@
 import React from "react";
-import MenuImage from "./../images/menu.jpg";
+import App from "./../images/apps.jpg";
+import Entree from "./../images/entree.jpg";
+import Dessert from "./../images/dessert.jpg";
 import MenuCard from "../components/menucard";
 
 const appetizer = [
@@ -27,15 +29,11 @@ function Menu() {
   return (
     <div className="flex flex-row items-center px-[70px] mt-[50px]">
       {/* APPS */}
-      <MenuCard
-        cardimg={MenuImage}
-        menuitems={appetizer}
-        category="Appetizers"
-      />
+      <MenuCard cardimg={App} menuitems={appetizer} category="Appetizers" />
       {/* Entrees */}
-      <MenuCard cardimg={MenuImage} menuitems={entrees} category="Entrees" />
+      <MenuCard cardimg={Entree} menuitems={entrees} category="Entrees" />
       {/* DESSERTS */}
-      <MenuCard cardimg={MenuImage} menuitems={desserts} category="Desserts" />
+      <MenuCard cardimg={Dessert} menuitems={desserts} category="Desserts" />
     </div>
   );
 }
