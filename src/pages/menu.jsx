@@ -11,8 +11,8 @@ const appetizer = [
 
 function Menu() {
   return (
-    <div className="flex flex-row items-center px-[70px]">
-      <div className="apps flex-auto ">
+    <div className="flex flex-row items-center px-[70px] mt-[50px]">
+      <div className="apps flex-auto bg-slate-500 max-w-[500px] p-5 mx-10 rounded-lg">
         <div className="relative flex justify-center">
           <img
             className="rounded-[20px] flex-shrink-0 max-h-[300px]"
@@ -26,7 +26,11 @@ function Menu() {
         <div className="menu-items flex justify-center">
           <ul>
             {appetizer.map((item, index) => {
-              return <li key={index}>{item}</li>;
+              return (
+                <li key={index} className="my-[15px]">
+                  {item}
+                </li>
+              );
             })}
           </ul>
         </div>
