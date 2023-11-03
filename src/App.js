@@ -8,6 +8,9 @@ import About from "./pages/about";
 function App() {
   return (
     <div className="font-sans">
+      <button>
+        <a href="" />
+      </button>
       <NavBar />
       <Hero />
       <Menu />
