@@ -3,12 +3,12 @@ import React from "react";
 function MenuCard({ cardimg, menuitems, category }) {
   return (
     <div className="apps flex-auto bg-slate-200 max-w-[450px] p-5 mx-10 rounded-[20px] min-h-[580px]">
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center items-center">
         <h2 className="text-center font-[500] text-[25px] text-[#f4ce14] leading-[51px] mb-2">
           {category}
         </h2>
         <img
-          className="rounded-[20px] flex-shrink-0 max-h-[300px]"
+          className="rounded-[20px] max-h-[220px] min-w-[320px] max-w-[320px]"
           src={cardimg}
           alt="flight bgd"
         />

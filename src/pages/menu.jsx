@@ -27,13 +27,16 @@ const desserts = [
 
 function Menu() {
   return (
-    <div className="flex flex-row items-center px-[70px] mt-[50px]">
-      {/* APPS */}
-      <MenuCard cardimg={App} menuitems={appetizer} category="Appetizers" />
-      {/* Entrees */}
-      <MenuCard cardimg={Entree} menuitems={entrees} category="Entrees" />
-      {/* DESSERTS */}
-      <MenuCard cardimg={Dessert} menuitems={desserts} category="Desserts" />
+    <div className="menu mb-16">
+      <h1 className="my-10 text-4xl text-center">Menu</h1>
+      <div className="flex flex-row justify-center items-center px-[70px] mt-[50px]">
+        {/* APPS */}
+        <MenuCard cardimg={App} menuitems={appetizer} category="Appetizers" />
+        {/* Entrees */}
+        <MenuCard cardimg={Entree} menuitems={entrees} category="Entrees" />
+        {/* DESSERTS */}
+        <MenuCard cardimg={Dessert} menuitems={desserts} category="Desserts" />
+      </div>
     </div>
   );
 }
