@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MenuRoute from "./routes/MenuRoute";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -8,7 +9,11 @@ import reportWebVitals from "./reportWebVitals";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <App />,
+  },
+  {
+    path: "/Menu",
+    element: <MenuRoute />,
   },
 ]);
 
