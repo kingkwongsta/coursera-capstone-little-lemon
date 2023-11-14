@@ -3,12 +3,12 @@ import Logo from "./../images/logo.png";
 
 function Footer() {
   return (
-    <nav className="flex items-center justify-evenly px-[90px] py-5 mt-5 bg-zinc-400">
+    <nav className="flex items-center justify-evenly px-[90px] py-5 mt-12 bg-zinc-400">
       <div className="flex flex-col space-y-2">
         <a href="/" className="text-gray-500 hover:text-[#f4ce14]">
           Home
         </a>
-        <a href="#" className="text-gray-500 hover:text-[#f4ce14]">
+        <a href="/about" className="text-gray-500 hover:text-[#f4ce14]">
           About
         </a>
         <a href="/menu" className="text-gray-500 hover:text-[#f4ce14]">
