@@ -19,7 +19,7 @@ function NavBar() {
         <a href="/menu" className="text-gray-500 hover:text-[#f4ce14]">
           Menu
         </a>
-        <a href="/resservations" className="text-gray-500 hover:text-[#f4ce14]">
+        <a href="/reservations" className="text-gray-500 hover:text-[#f4ce14]">
           Reservations
         </a>
       </div>
