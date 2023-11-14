@@ -8,13 +8,13 @@ function NavBar() {
         <img className="max-h-[50px]" src={Logo} alt="little-lemon-logo" />
       </div>
       <div className="flex space-x-4">
-        <a href="#" className="text-gray-500 hover:text-gray-900">
+        <a href="#" className="text-gray-500 hover:text-[#f4ce14]">
           Home
         </a>
-        <a href="#" className="text-gray-500 hover:text-gray-900">
+        <a href="#" className="text-gray-500 hover:text-[#f4ce14]">
           About
         </a>
-        <a href="/menu" className="text-gray-500 hover:text-gray-900">
+        <a href="/menu" className="text-gray-500 hover:text-[#f4ce14]">
           Menu
         </a>
       </div>

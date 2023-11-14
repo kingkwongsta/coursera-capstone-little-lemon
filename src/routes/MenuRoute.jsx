@@ -7,6 +7,7 @@ function MenuRoute() {
     <>
       <NavBar />
       <Menu />
+      <h1>HELLO WORLD</h1>
     </>
   );
 }
