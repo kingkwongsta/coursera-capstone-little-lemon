@@ -14,8 +14,8 @@ function NavBar() {
         <a href="#" className="text-gray-500 hover:text-gray-900">
           About
         </a>
-        <a href="#" className="text-gray-500 hover:text-gray-900">
-          Contact
+        <a href="/menu" className="text-gray-500 hover:text-gray-900">
+          Menu
         </a>
       </div>
     </nav>
