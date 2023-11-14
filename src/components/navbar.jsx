@@ -11,7 +11,7 @@ function NavBar() {
         <a href="/" className="text-gray-500 hover:text-[#f4ce14]">
           Home
         </a>
-        <a href="#" className="text-gray-500 hover:text-[#f4ce14]">
+        <a href="/about" className="text-gray-500 hover:text-[#f4ce14]">
           About
         </a>
         <a href="/menu" className="text-gray-500 hover:text-[#f4ce14]">
