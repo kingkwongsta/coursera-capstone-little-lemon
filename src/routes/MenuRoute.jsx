@@ -7,9 +7,8 @@ function MenuRoute() {
     <>
       <NavBar />
       <Menu />
-      <h1>HELLO WORLD</h1>
     </>
   );
 }
 
-export default Menu;
+export default MenuRoute;
