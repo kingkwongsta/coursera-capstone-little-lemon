@@ -1,6 +1,6 @@
 import React from "react";
 import ResyImage from "./../images/resy.jpg";
-import ResyForm from "../components/resyform";
+import ResyForm from "../components/ReservationForm";
 
 function Reservations() {
   return (
