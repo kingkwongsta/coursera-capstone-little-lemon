@@ -1,11 +1,13 @@
 import React from "react";
 import NavBar from "./../components/navbar";
 import Footer from "../components/footer";
+import Reservations from "../pages/reservations";
 
 function ReservationsRoute() {
   return (
     <>
       <NavBar />
+      <Reservations />
       <Footer />
     </>
   );

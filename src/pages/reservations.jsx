@@ -1,10 +1,10 @@
 import React from "react";
 import ResyImage from "./../images/resy.jpg";
-import ResyForm from "../components/ReservationForm";
+import ResyForm from "../components/reservationform";
 
 function Reservations() {
   return (
-    <div className="flex flex-row justify-around mt-12">
+    <div className="flex flex-row justify-around align-middle mt-12">
       <div>
         <ResyForm />
       </div>
