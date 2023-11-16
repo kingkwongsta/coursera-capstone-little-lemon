@@ -108,7 +108,7 @@ const ReservationForm = () => {
 
   return (
     <form
-      className="min-w-[400px] bg-white p-6 rounded-md shadow-md mt-10"
+      className="min-w-[500px] bg-white p-6 rounded-md shadow-md mt-10"
       onSubmit={handleSubmit}
     >
       {/* FIRST AND LAST NAME */}
@@ -193,101 +193,105 @@ const ReservationForm = () => {
           <span className="text-red-500 text-sm">{formErrors.phoneNumber}</span>
         )}
       </div>
+      {/* DATE AND TIME */}
+      <div className="flex flex-row space-x-7">
+        <div className="mb-4">
+          <label
+            htmlFor="date"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Date<span className="text-red-500"> *</span>
+          </label>
+          <DatePicker
+            id="date"
+            selected={formData.date}
+            onChange={handleDateChange}
+            className="border border-gray-300 p-2 w-full rounded-md"
+          />
+          {formErrors.date && (
+            <span className="text-red-500 text-sm">{formErrors.date}</span>
+          )}
+        </div>
 
-      <div className="mb-4">
-        <label
-          htmlFor="date"
-          className="block text-gray-700 text-sm font-bold mb-2"
-        >
-          Date<span className="text-red-500"> *</span>
-        </label>
-        <DatePicker
-          id="date"
-          selected={formData.date}
-          onChange={handleDateChange}
-          className="border border-gray-300 p-2 w-full rounded-md"
-        />
-        {formErrors.date && (
-          <span className="text-red-500 text-sm">{formErrors.date}</span>
-        )}
-      </div>
-
-      <div className="mb-4">
-        <label
-          htmlFor="time"
-          className="block text-gray-700 text-sm font-bold mb-2"
-        >
-          Time<span className="text-red-500"> *</span>
-        </label>
-        <select
-          id="time"
-          name="time"
-          value={formData.time}
-          onChange={handleTimeChange}
-          className="border border-gray-300 p-2 w-full rounded-md"
-        >
-          <option value="" disabled>
-            Select Time
-          </option>
-          {timeOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
+        <div className="mb-4">
+          <label
+            htmlFor="time"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Time<span className="text-red-500"> *</span>
+          </label>
+          <select
+            id="time"
+            name="time"
+            value={formData.time}
+            onChange={handleTimeChange}
+            className="border border-gray-300 p-2 w-full rounded-md"
+          >
+            <option value="" disabled>
+              Select Time
             </option>
-          ))}
-        </select>
-        {formErrors.time && (
-          <span className="text-red-500 text-sm">{formErrors.time}</span>
-        )}
+            {timeOptions.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          {formErrors.time && (
+            <span className="text-red-500 text-sm">{formErrors.time}</span>
+          )}
+        </div>
       </div>
+      {/* GUEST AND OCCASION */}
+      <div className="flex flex-row space-x-7">
+        <div className="mb-4">
+          <label
+            htmlFor="numberOfGuests"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Number of Guests<span className="text-red-500"> *</span>
+          </label>
+          <input
+            type="number"
+            id="numberOfGuests"
+            name="numberOfGuests"
+            value={formData.numberOfGuests}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full rounded-md"
+          />
+          {formErrors.numberOfGuests && (
+            <span className="text-red-500 text-sm">
+              {formErrors.numberOfGuests}
+            </span>
+          )}
+        </div>
 
-      <div className="mb-4">
-        <label
-          htmlFor="numberOfGuests"
-          className="block text-gray-700 text-sm font-bold mb-2"
-        >
-          Number of Guests<span className="text-red-500"> *</span>
-        </label>
-        <input
-          type="number"
-          id="numberOfGuests"
-          name="numberOfGuests"
-          value={formData.numberOfGuests}
-          onChange={handleChange}
-          className="border border-gray-300 p-2 w-full rounded-md"
-        />
-        {formErrors.numberOfGuests && (
-          <span className="text-red-500 text-sm">
-            {formErrors.numberOfGuests}
-          </span>
-        )}
-      </div>
-
-      <div className="mb-4">
-        <label
-          htmlFor="occasion"
-          className="block text-gray-700 text-sm font-bold mb-2"
-        >
-          Occasion
-        </label>
-        <select
-          id="occasion"
-          name="occasion"
-          value={formData.occasion}
-          onChange={handleOccasionChange}
-          className="border border-gray-300 p-2 w-full rounded-md"
-        >
-          <option value="" disabled>
-            Select Occasion
-          </option>
-          {occasionOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
+        <div className="mb-4">
+          <label
+            htmlFor="occasion"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Occasion
+          </label>
+          <select
+            id="occasion"
+            name="occasion"
+            value={formData.occasion}
+            onChange={handleOccasionChange}
+            className="border border-gray-300 p-2 w-full rounded-md"
+          >
+            <option value="" disabled>
+              Select Occasion
             </option>
-          ))}
-        </select>
-        {formErrors.occasion && (
-          <span className="text-red-500 text-sm">{formErrors.occasion}</span>
-        )}
+            {occasionOptions.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          {formErrors.occasion && (
+            <span className="text-red-500 text-sm">{formErrors.occasion}</span>
+          )}
+        </div>
       </div>
 
       <button
