@@ -14,7 +14,6 @@ const timeOptions = [
   "7:00 PM",
   "8:00 PM",
   "9:00 PM",
-  "10:00 PM",
 ];
 
 const occasionOptions = ["Birthday", "Anniversary", "Celebration", "Other"];
@@ -119,7 +118,7 @@ const ReservationForm = () => {
             htmlFor="firstName"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            First Name:
+            First Name<span className="text-red-500"> *</span>
           </label>
           <input
             type="text"
@@ -139,7 +138,7 @@ const ReservationForm = () => {
             htmlFor="lastName"
             className="block text-gray-700 text-sm font-bold mb-2"
           >
-            Last Name:
+            Last Name<span className="text-red-500"> *</span>
           </label>
           <input
             type="text"
@@ -160,7 +159,7 @@ const ReservationForm = () => {
           htmlFor="email"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Email:
+          Email<span className="text-red-500"> *</span>
         </label>
         <input
           type="email"
@@ -180,7 +179,7 @@ const ReservationForm = () => {
           htmlFor="phoneNumber"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Phone Number:
+          Phone Number<span className="text-red-500"> *</span>
         </label>
         <input
           type="tel"
@@ -200,7 +199,7 @@ const ReservationForm = () => {
           htmlFor="date"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Date:
+          Date<span className="text-red-500"> *</span>
         </label>
         <DatePicker
           id="date"
@@ -218,7 +217,7 @@ const ReservationForm = () => {
           htmlFor="time"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Time:
+          Time<span className="text-red-500"> *</span>
         </label>
         <select
           id="time"
@@ -246,7 +245,7 @@ const ReservationForm = () => {
           htmlFor="numberOfGuests"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Number of Guests:
+          Number of Guests<span className="text-red-500"> *</span>
         </label>
         <input
           type="number"
@@ -268,7 +267,7 @@ const ReservationForm = () => {
           htmlFor="occasion"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
-          Occasion:
+          Occasion
         </label>
         <select
           id="occasion"
