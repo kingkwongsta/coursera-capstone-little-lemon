@@ -109,47 +109,50 @@ const ReservationForm = () => {
 
   return (
     <form
-      className="max-w-md mx-auto bg-white p-6 rounded-md shadow-md mt-10"
+      className="min-w-[400px] bg-white p-6 rounded-md shadow-md mt-10"
       onSubmit={handleSubmit}
     >
-      <div className="mb-4">
-        <label
-          htmlFor="firstName"
-          className="block text-gray-700 text-sm font-bold mb-2"
-        >
-          First Name:
-        </label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          className="border border-gray-300 p-2 w-full rounded-md"
-        />
-        {formErrors.firstName && (
-          <span className="text-red-500 text-sm">{formErrors.firstName}</span>
-        )}
-      </div>
+      {/* FIRST AND LAST NAME */}
+      <div className="flex flex-row space-x-7">
+        <div className="mb-4">
+          <label
+            htmlFor="firstName"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            First Name:
+          </label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full rounded-md"
+          />
+          {formErrors.firstName && (
+            <span className="text-red-500 text-sm">{formErrors.firstName}</span>
+          )}
+        </div>
 
-      <div className="mb-4">
-        <label
-          htmlFor="lastName"
-          className="block text-gray-700 text-sm font-bold mb-2"
-        >
-          Last Name:
-        </label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-          className="border border-gray-300 p-2 w-full rounded-md"
-        />
-        {formErrors.lastName && (
-          <span className="text-red-500 text-sm">{formErrors.lastName}</span>
-        )}
+        <div className="mb-4">
+          <label
+            htmlFor="lastName"
+            className="block text-gray-700 text-sm font-bold mb-2"
+          >
+            Last Name:
+          </label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            className="border border-gray-300 p-2 w-full rounded-md"
+          />
+          {formErrors.lastName && (
+            <span className="text-red-500 text-sm">{formErrors.lastName}</span>
+          )}
+        </div>
       </div>
 
       <div className="mb-4">
@@ -288,7 +291,12 @@ const ReservationForm = () => {
         )}
       </div>
 
-      {/* ... (submit button) */}
+      <button
+        type="submit"
+        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+      >
+        Submit
+      </button>
     </form>
   );
 };
