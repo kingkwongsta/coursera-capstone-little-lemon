@@ -22,7 +22,7 @@ function Footer() {
         <h2 className="text-gray-600 text-lg">Contact</h2>
         <p>123 Lemon Street</p>
         <p>Chicago, Illinois 60007 </p>
-        <p>littlelemon_contact@littlelemon.com</p>
+        <p>littlelemon@littlelemon.com</p>
       </div>
       <div className="">
         <img className="max-h-[50px]" src={Logo} alt="little-lemon-logo" />

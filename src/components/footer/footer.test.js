@@ -23,12 +23,15 @@ describe("Footer component", () => {
   test("renders contact information", () => {
     render(<Footer />);
 
-    const contactHeading = screen.getByText(/contact/i);
+    const contactHeadings = screen.queryAllByText(/contact/i);
+    console.log(contactHeadings);
+
+    expect(contactHeadings.length).toBe(1);
+
     const address = screen.getByText(/123 Lemon Street/i);
     const city = screen.getByText(/Chicago, Illinois 60007/i);
-    const email = screen.getByText(/littlelemon_contact@littlelemon.com/i);
+    const email = screen.getByText(/littlelemon@littlelemon.com/i);
 
-    expect(contactHeading).toBeInTheDocument();
     expect(address).toBeInTheDocument();
     expect(city).toBeInTheDocument();
     expect(email).toBeInTheDocument();
