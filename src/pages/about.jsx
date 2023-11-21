@@ -3,15 +3,15 @@ import AboutImage from "./../images/about.jpg";
 
 function About() {
   return (
-    <div className="flex flex-row items-center bg-slate-400 mt-5 px-16">
-      <div className="w-2/5 flex justify-center p-4 pr-[70px]">
+    <div className="flex flex-row max-md:flex-col items-center bg-slate-400 mt-5 px-16">
+      <div className="w-2/5 flex justify-center">
         <img
           className="max-h-[350px] rounded-3xl"
           src={AboutImage}
           alt="hero-food"
         />
       </div>
-      <div className="w-3/5 justify-center p-8 mx-5 pl-[70px] pr-[100px]">
+      <div className="w-3/5 justify-center p-8 mx-5">
         <h2 className="text-5xl text-[#f4ce14] font-medium mb-8">
           About Little Lemon
         </h2>
