@@ -55,7 +55,7 @@ function NavBar() {
         </div>
       </div>
       {/* Menu Large Screen Display */}
-      <div className="flex flex-row">
+      <div className="flex flex-row space-x-6 max-md:hidden">
         <a href="/" className="text-gray-500 hover:text-[#f4ce14]">
           Home
         </a>
