@@ -29,7 +29,7 @@ function Menu() {
   return (
     <div className="menu mb-16">
       <h1 className="my-10 text-4xl text-center">Menu</h1>
-      <div className="flex flex-row justify-center items-center px-[70px] mt-[50px]">
+      <div className="flex flex-col items-center md:flex-row justify-center px-5 md:px-0 mt-5 md:mt-[50px]">
         {/* APPS */}
         <MenuCard cardimg={App} menuitems={appetizer} category="Appetizers" />
         {/* Entrees */}
