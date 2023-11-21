@@ -2,7 +2,7 @@ import React from "react";
 
 function MenuCard({ cardimg, menuitems, category }) {
   return (
-    <div className="menu-card flex-auto bg-slate-200 max-w-[450px] p-5 mx-10 rounded-[20px] min-h-[580px] md:m-[50px]">
+    <div className="menu-card flex-auto bg-slate-200 max-w-[450px] p-5 mx-10 rounded-[20px] min-h-[580px] max-md:m-[10px] max-md:min-w-[450px]">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-center font-[500] text-[25px] text-[#f4ce14] leading-[51px] mb-2">
           {category}
