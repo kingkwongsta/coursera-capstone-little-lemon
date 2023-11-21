@@ -3,6 +3,8 @@ import { render, screen } from "@testing-library/react";
 import Footer from "./Footer";
 import Logo from "./../../images/logo.png";
 
+jest.mock("./../../images/logo.png", () => "path/to/mock/logo.png");
+
 describe("Footer component", () => {
   test("renders navigation links", () => {
     render(<Footer />);

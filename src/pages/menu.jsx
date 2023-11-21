@@ -2,7 +2,7 @@ import React from "react";
 import App from "./../images/apps.jpg";
 import Entree from "./../images/entree.jpg";
 import Dessert from "./../images/dessert.jpg";
-import MenuCard from "../components/menucard";
+import MenuCard from "../components/menu/menucard";
 
 const appetizer = [
   "Whipped Feta with Cucumbers",
