@@ -1,7 +1,7 @@
 import React from "react";
 import About from "./../pages/about";
 import NavBar from "./../components/navbar";
-import Footer from "../components/footer";
+import Footer from "../components/footer/footer";
 
 function AboutRoute() {
   return (

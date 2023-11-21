@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "./../pages/menu";
 import NavBar from "./../components/navbar";
-import Footer from "../components/footer";
+import Footer from "../components/footer/footer";
 
 function MenuRoute() {
   return (
