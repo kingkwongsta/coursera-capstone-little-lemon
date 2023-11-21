@@ -2,7 +2,7 @@ import "./App.css";
 import "./index.css";
 import Hero from "./pages/hero";
 import NavBar from "./components/navbar";
-import Footer from "./components/footer";
+import Footer from "./components/footer/footer";
 import Menu from "./pages/menu";
 import About from "./pages/about";
 import Reservations from "./pages/reservations";
