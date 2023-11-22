@@ -36,7 +36,10 @@ function NavBar() {
             />
           </svg>
         </button>
-        <div className={`${menuOpen ? "flex flex-col" : "hidden"}`}>
+        <div
+          data-testid="menu"
+          className={`${menuOpen ? "flex flex-col" : "hidden"}`}
+        >
           <a href="/" className="text-gray-500 hover:text-[#f4ce14]">
             Home
           </a>
