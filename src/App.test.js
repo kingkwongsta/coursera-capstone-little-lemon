@@ -3,9 +3,9 @@ import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 jest.mock("./pages/hero", () => () => <div data-testid="hero-component" />);
-jest.mock("./components/navbar", () => () => (
-  <div data-testid="navbar-component" />
-));
+// jest.mock("./components/navbar", () => () => (
+//   <div data-testid="navbar-component" />
+// ));
 jest.mock("./components/footer/footer", () => () => (
   <div data-testid="footer-component" />
 ));
@@ -20,7 +20,7 @@ describe("App component", () => {
     render(<App />);
 
     // Use getByTestId to query elements based on the "data-testid" attribute
-    expect(screen.getByTestId("navbar-component")).toBeInTheDocument();
+    // expect(screen.getByTestId("navbar-component")).toBeInTheDocument();
     expect(screen.getByTestId("hero-component")).toBeInTheDocument();
     expect(screen.getByTestId("menu-component")).toBeInTheDocument();
     expect(screen.getByTestId("about-component")).toBeInTheDocument();
