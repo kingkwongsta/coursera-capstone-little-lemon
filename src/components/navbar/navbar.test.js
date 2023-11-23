@@ -36,8 +36,12 @@ test("Toggle menu button works correctly", () => {
   expect(menu).toHaveClass("hidden");
 
   // Click the toggle menu button
-  const toggleMenuButtons = getAllByText(document.body, "Menu");
+  const toggleMenuButtons = queryAllByText(document.body, "Menu");
   fireEvent.click(toggleMenuButtons[0]);
+
+  setTimeout(() => {
+    expect(menu).toHaveClass("flex flex-col");
+  });
 
   // Check if the menu is now visible
   expect(menu).toHaveClass("flex flex-col");
